@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4049621b-3fff-4252-9b13-296142867625" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/action/SingleAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/datasource/Read.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/datasource/Write.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/thedroid/DbCrudAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/Commandbar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/DefaultCommandbar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultDialogs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultTextDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DialogListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/Dialogs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ant.properties" afterPath="$PROJECT_DIR$/ant.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colours.xml" afterPath="$PROJECT_DIR$/res/values/colours.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/button/Buttons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtons.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sycophant.iws" afterPath="$PROJECT_DIR$/sycophant.iws" />
     </list>
     <ignored path="sycophant.iws" />
@@ -75,13 +62,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultDialogs.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DefaultDialogs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultDialogs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="54" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.46026987">
+            <state line="35" column="54" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buttons.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/button/Buttons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="23" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultButtons.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="24" selection-start="156" selection-end="156" vertical-scroll-proportion="0.13235295">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,24 +125,6 @@
       </file>
       <file leaf-file-name="ItemAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/action/ItemAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntentAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/action/IntentAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/action/IdAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
               <folding />
@@ -189,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/drawable/transparent.xml" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtonImages.java" />
-        <option value="$PROJECT_DIR$/res/values/colours.xml" />
         <option value="$PROJECT_DIR$/res/color/background_highlights.xml" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DialogListener.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultTextDialog.java" />
@@ -205,6 +189,9 @@
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultDialogs.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/Commandbar.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/DefaultCommandbar.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/Button.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/Buttons.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtons.java" />
       </list>
     </option>
   </component>
@@ -663,6 +650,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dsq.sycophant.ui.button" />
       <recent name="dsq.sycophant.ui.commandbar" />
       <recent name="dsq.sycophant.ui.dialog" />
       <recent name="dsq.sycophant.layout.button" />
@@ -889,24 +877,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultTextDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../libs/thedroid/src/dsq/thedroid/db/DbAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="17" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
@@ -1007,10 +977,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/DefaultDialogs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="54" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.46026987">
+        <state line="35" column="54" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/button/Buttons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="156" selection-end="156" vertical-scroll-proportion="0.13235295">
+          <folding />
         </state>
       </provider>
     </entry>
