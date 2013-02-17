@@ -11,5 +11,5 @@ public interface Selectors {
     StateListDrawable enabled(ButtonImages images);
     StateListDrawable disabled(ButtonImages images);
     StateListDrawable custom(Map<String, List<Integer>> states);
-    Drawable transparent();
+    Drawable drawable(String name);
 }

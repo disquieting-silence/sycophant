@@ -52,8 +52,8 @@ public class DefaultSelectors implements Selectors {
     }
 
     @Override
-    public Drawable transparent() {
-        return getImage("transparent");
+    public Drawable drawable(String name) {
+        return getImage(name);
     }
 
     private void setSelectorState(final StateListDrawable states, final String imageName, final int[] stateSet) {

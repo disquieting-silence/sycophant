@@ -45,7 +45,7 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
     private void setupSelector() {
         final Selectors selectors = new DefaultSelectors(context, this);
         button.setImageDrawable(enabled ? selectors.enabled(images) : selectors.disabled(images));
-        button.setBackgroundDrawable(selectors.transparent());
+        button.setBackgroundDrawable(selectors.drawable("transparent"));
     }
 
     /* FIX: Really wish this was an interface .... Dupe from listless. */

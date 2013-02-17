@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4049621b-3fff-4252-9b13-296142867625" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ButtonIcon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogIdAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogSimpleAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/DefaultTabbar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/attrs.xml" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/highlighted_tab.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/values.xml" afterPath="$PROJECT_DIR$/res/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sycophant.iws" afterPath="$PROJECT_DIR$/sycophant.iws" />
     </list>
     <ignored path="sycophant.iws" />
@@ -74,16 +69,7 @@
       <file leaf-file-name="DefaultButtonIcon.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="64" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ButtonIcon.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ButtonIcon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+            <state line="47" column="68" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,7 +78,7 @@
       <file leaf-file-name="DefaultButtonIcon.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="17" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.0">
+            <state line="72" column="117" selection-start="2493" selection-end="2493" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#999#1022#0" expanded="true" />
@@ -101,62 +87,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextDialogIdAction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogIdAction.java">
+      <file leaf-file-name="colours.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/colours.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="121" selection-start="478" selection-end="478" vertical-scroll-proportion="0.3537415">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextDialogSimpleAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogSimpleAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="1" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commandbar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/Commandbar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="52" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+            <state line="6" column="34" selection-start="240" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tabbar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultTabbar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/DefaultTabbar.java">
+      <file leaf-file-name="values.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/values/values.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+            <state line="20" column="130" selection-start="887" selection-end="887" vertical-scroll-proportion="0.37414965">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transparent.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/transparent.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="155" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highlighted_tab.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/highlighted_tab.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="39" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attrs.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selectors.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="22" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultCommandbar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/DefaultCommandbar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="24" selection-start="350" selection-end="1680" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -164,7 +155,7 @@
       <file leaf-file-name="DefaultSelectors.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="82" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+            <state line="55" column="57" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,22 +176,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/DefaultCommandbar.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/Button.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/Buttons.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtons.java" />
-        <option value="$PROJECT_DIR$/res/values/values.xml" />
         <option value="$PROJECT_DIR$/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelector.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ButtonIcon.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/DefaultTabbar.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogIdAction.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogSimpleAction.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java" />
+        <option value="$PROJECT_DIR$/res/drawable/highighted_tab.xml" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java" />
+        <option value="$PROJECT_DIR$/res/drawable/highlighted_tab.xml" />
+        <option value="$PROJECT_DIR$/res/values/values.xml" />
       </list>
     </option>
   </component>
@@ -665,42 +656,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sycophant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sycophant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sycophant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sycophant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dsq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sycophant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -989,64 +944,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="77" selection-start="1025" selection-end="1029" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/ButtonIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="171" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/button/DefaultButtonImages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/android-sdk-linux/platforms/android-7/android.jar!/android/R.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="984" column="32" selection-start="56949" selection-end="56949" vertical-scroll-proportion="0.46153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ButtonIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="82" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/commandbar/Commandbar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="52" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
@@ -1061,36 +958,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="64" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="20" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/DefaultTabbar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="17" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#999#1022#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,10 +976,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/dialog/TextDialogIdAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="121" selection-start="478" selection-end="478" vertical-scroll-proportion="0.3537415">
+        <state line="14" column="121" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/DefaultTabbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/Selectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/common/selector/button/DefaultSelectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="57" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/transparent.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/commandbar/button/DefaultButtonIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="68" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultButtonIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="117" selection-start="2493" selection-end="2493" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#999#1022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/highlighted_tab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colours.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="34" selection-start="240" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="130" selection-start="887" selection-end="887" vertical-scroll-proportion="0.37414965">
+          <folding />
         </state>
       </provider>
     </entry>

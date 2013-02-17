@@ -52,7 +52,8 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
         final Selectors selectors = new DefaultSelectors(context, this);
         final StateListDrawable states = selectors.custom(images);
         button.setImageDrawable(states);
-        button.setBackgroundDrawable(selectors.transparent());
+        final String drawable = selected ? "highlighted_tab" : "transparent";
+        button.setBackgroundDrawable(selectors.drawable(drawable));
     }
 
     @Override
@@ -72,10 +73,12 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
     @Override
     public void setEnabled(final boolean enabled) {
         this.enabled = enabled;
+        setupSelector();
     }
 
     @Override
     public void setSelected(final boolean selected) {
         this.selected = selected;
+        setupSelector();
     }
 }
