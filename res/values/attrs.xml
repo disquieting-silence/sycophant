@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="CommandBarIconLayout">
+    <declare-styleable name="IconLayout">
         <attr name="icon" format="string"/>
     </declare-styleable>
 </resources>

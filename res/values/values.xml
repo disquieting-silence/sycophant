@@ -16,4 +16,20 @@
         <item name="android:paddingBottom">4px</item>
     </style>
 
+    <style name="Tabbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">100dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:drawable/divider_horizontal_dark</item>
+    </style>
+
+    <style name="TabbarIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">12px</item>
+        <item name="android:paddingRight">12px</item>
+        <item name="android:paddingTop">29px</item>
+        <item name="android:paddingBottom">29px</item>
+    </style>
+
 </resources>

@@ -1,29 +1,35 @@
-package dsq.sycophant.layout.commandbar.button;
+package dsq.sycophant.layout.tabbar.button;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import dsq.sycophant.R;
-import dsq.sycophant.action.SimpleAction;
 import dsq.sycophant.layout.common.selector.button.DefaultSelectors;
 import dsq.sycophant.layout.common.selector.button.Selectors;
-import dsq.sycophant.ui.button.ButtonImages;
-import dsq.sycophant.ui.button.DefaultButtonImages;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
-    private final ImageButton button;
 
     private boolean enabled = true;
+    private boolean selected = false;
+
+    private final ImageButton button;
     private final Context context;
 
-    private ButtonImages images;
+    private final Map<String, List<Integer>> images = new HashMap<String, List<Integer>>();
 
     public DefaultButtonIcon(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -33,38 +39,43 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
         final String iconBase = attributes.getString(R.styleable.IconLayout_icon);
 
         button = new ImageButton(context);
-
-        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT);
         button.setLayoutParams(params);
 
         addView(button);
-        images = new DefaultButtonImages(iconBase);
+        images.put(iconBase, Arrays.asList(android.R.attr.state_pressed));
+        images.put(iconBase, Arrays.asList(0));
         setupSelector();
     }
 
     private void setupSelector() {
         final Selectors selectors = new DefaultSelectors(context, this);
-        button.setImageDrawable(enabled ? selectors.enabled(images) : selectors.disabled(images));
+        final StateListDrawable states = selectors.custom(images);
+        button.setImageDrawable(states);
         button.setBackgroundDrawable(selectors.transparent());
     }
 
-    /* FIX: Really wish this was an interface .... Dupe from listless. */
-    public void setAction(final SimpleAction action) {
-        button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void setView(final Class<?> cls) {
+        button.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(final View view) {
-                if (enabled) action.run();
+                if (!selected) {
+                    final Intent intent = new Intent(context, cls);
+                    context.startActivity(intent);
+                }
             }
         });
+
     }
 
-    // FIX 22/12/12 Clean up these button images.
-    public void setActionEnabled(final boolean enabled) {
+    @Override
+    public void setEnabled(final boolean enabled) {
         this.enabled = enabled;
-        setupSelector();
     }
 
-    public void setImages(final ButtonImages images) {
-        this.images = images;
-        setupSelector();
+    @Override
+    public void setSelected(final boolean selected) {
+        this.selected = selected;
     }
 }
