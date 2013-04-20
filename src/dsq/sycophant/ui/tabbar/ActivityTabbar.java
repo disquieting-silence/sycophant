@@ -1,6 +1,7 @@
 package dsq.sycophant.ui.tabbar;
 
 import android.app.Activity;
+import dsq.sycophant.action.IdAction;
 import dsq.sycophant.layout.tabbar.button.ActivityTabIcon;
 import dsq.sycophant.layout.tabbar.button.TabIcon;
 
@@ -42,5 +43,10 @@ public class ActivityTabbar implements Tabbar {
 
     public ActivityTabIcon get(final int actionId) {
         return (ActivityTabIcon)activity.findViewById(actionId);
+    }
+
+    @Override
+    public void setOnChange(final IdAction action) {
+        // TO DO: Implement
     }
 }

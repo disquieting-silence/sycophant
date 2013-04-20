@@ -1,5 +1,6 @@
 package dsq.sycophant.ui.tabbar;
 
+import dsq.sycophant.action.IdAction;
 import dsq.sycophant.layout.tabbar.button.TabIcon;
 
 public interface Tabbar {
@@ -7,4 +8,5 @@ public interface Tabbar {
     void select(int actionId);
     void trigger(int actionId);
     TabIcon get(int actionId);
+    void setOnChange(IdAction action);
 }

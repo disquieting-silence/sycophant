@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
+import dsq.sycophant.action.IdAction;
 import dsq.sycophant.action.SimpleAction;
 import dsq.sycophant.layout.tabbar.button.TabIcon;
 import dsq.sycophant.layout.tabbar.button.ClickTabIcon;
@@ -16,6 +17,7 @@ public class ViewTabbar implements Tabbar {
     private final Activity activity;
     private final Map<Integer, ComponentIndex> tabs;
     private final FrameLayout parent;
+    private IdAction listener;
 
     public ViewTabbar(final Activity activity, final ComponentIndex frameIndex, final Map<Integer, ComponentIndex> actions) {
         this.activity = activity;
@@ -70,9 +72,15 @@ public class ViewTabbar implements Tabbar {
 
         final View view = activity.findViewById(index.value);
         view.setVisibility(View.VISIBLE);
+        if (listener != null) listener.run(actionId);
     }
 
     public ClickTabIcon get(final int actionId) {
         return (ClickTabIcon)activity.findViewById(actionId);
+    }
+
+    @Override
+    public void setOnChange(final IdAction action) {
+        listener = action;
     }
 }

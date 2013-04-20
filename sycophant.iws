@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4049621b-3fff-4252-9b13-296142867625" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultViewTabIcon.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultClickTabIcon.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ViewTabIcon.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ClickTabIcon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ViewTabbar.java" afterPath="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ViewTabbar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sycophant.iws" afterPath="$PROJECT_DIR$/sycophant.iws" />
     </list>
     <ignored path="sycophant.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,19 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tabbar.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Tabbar.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="7" column="35" selection-start="201" selection-end="201" vertical-scroll-proportion="0.22580644">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewTabbar.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ViewTabbar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ViewTabbar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="74" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.2580645">
+            <state line="83" column="26" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,7 +96,7 @@
       <file leaf-file-name="ActivityTabbar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="33" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+            <state line="50" column="12" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -186,11 +185,11 @@
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultTabIcon.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultActivityTabIcon.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ViewTabIcon.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java" />
-        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultViewTabIcon.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ClickTabIcon.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/DefaultClickTabIcon.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java" />
+        <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java" />
         <option value="$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ViewTabbar.java" />
       </list>
     </option>
@@ -838,9 +837,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="17" width="1438" height="881" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32896462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32896462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -989,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/layout/tabbar/button/ClickTabIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="22" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
@@ -1019,16 +1011,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ViewTabbar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+        <state line="83" column="26" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="12" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/ViewTabbar.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/sycophant/ui/tabbar/Tabbar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="74" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.2580645">
+        <state line="7" column="35" selection-start="201" selection-end="201" vertical-scroll-proportion="0.22580644">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
