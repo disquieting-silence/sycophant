@@ -57,7 +57,6 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
         });
     }
 
-    // FIX 22/12/12 Clean up these button images.
     public void setActionEnabled(final boolean enabled) {
         this.enabled = enabled;
         setupSelector();

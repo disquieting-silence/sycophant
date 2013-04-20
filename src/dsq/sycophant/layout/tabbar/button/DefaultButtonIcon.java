@@ -64,6 +64,7 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
                 if (!selected) {
                     final Intent intent = new Intent(context, cls);
                     context.startActivity(intent);
+                    if (context instanceof Activity) ((Activity)context).finish();
                 }
             }
         });
