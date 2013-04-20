@@ -7,7 +7,6 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.StateListDrawable;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import dsq.sycophant.R;
@@ -21,39 +20,17 @@ import java.util.Map;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
-
-    private boolean enabled = true;
-    private boolean selected = false;
-
+public class DefaultActivityTabIcon extends LinearLayout implements ActivityTabIcon {
     private final ImageButton button;
     private final Context context;
+    private final TabIcon delegate;
 
-    private final Map<String, List<Integer>> images = new HashMap<String, List<Integer>>();
-
-    public DefaultButtonIcon(Context context, AttributeSet attrs) {
+    public DefaultActivityTabIcon(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
-
-        final TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.IconLayout);
-        final String iconBase = attributes.getString(R.styleable.IconLayout_icon);
-
         button = new ImageButton(context);
-        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT);
-        button.setLayoutParams(params);
-
+        this.delegate = new DefaultTabIcon(this, button, context, attrs);
         addView(button);
-        images.put(iconBase, Arrays.asList(android.R.attr.state_pressed));
-        images.put(iconBase, Arrays.asList(0));
-        setupSelector();
-    }
-
-    private void setupSelector() {
-        final Selectors selectors = new DefaultSelectors(context, this);
-        final StateListDrawable states = selectors.custom(images);
-        button.setImageDrawable(states);
-        final String drawable = selected ? "highlighted_tab" : "transparent";
-        button.setBackgroundDrawable(selectors.drawable(drawable));
     }
 
     @Override
@@ -61,7 +38,7 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(final View view) {
-                if (!selected) {
+                if (!isSelected()) {
                     final Intent intent = new Intent(context, cls);
                     context.startActivity(intent);
                     if (context instanceof Activity) ((Activity)context).finish();
@@ -73,13 +50,16 @@ public class DefaultButtonIcon extends LinearLayout implements ButtonIcon {
 
     @Override
     public void setEnabled(final boolean enabled) {
-        this.enabled = enabled;
-        setupSelector();
+        delegate.setEnabled(enabled);
     }
 
     @Override
     public void setSelected(final boolean selected) {
-        this.selected = selected;
-        setupSelector();
+        delegate.setSelected(selected);
+    }
+
+    @Override
+    public boolean isSelected() {
+        return delegate.isSelected();
     }
 }

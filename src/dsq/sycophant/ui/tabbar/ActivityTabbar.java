@@ -1,17 +1,18 @@
 package dsq.sycophant.ui.tabbar;
 
 import android.app.Activity;
-import dsq.sycophant.layout.tabbar.button.ButtonIcon;
+import dsq.sycophant.layout.tabbar.button.ActivityTabIcon;
+import dsq.sycophant.layout.tabbar.button.TabIcon;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class DefaultTabbar implements Tabbar {
+public class ActivityTabbar implements Tabbar {
     private final Activity activity;
     private final Map<Integer, Class<?>> actions;
 
 
-    public DefaultTabbar(final Activity activity, final Map<Integer, Class<?>> actions) {
+    public ActivityTabbar(final Activity activity, final Map<Integer, Class<?>> actions) {
         this.activity = activity;
         this.actions = new HashMap<Integer, Class<?>>(actions);
     }
@@ -19,7 +20,7 @@ public class DefaultTabbar implements Tabbar {
     public void register() {
         for (Integer viewId : actions.keySet()) {
             final Class<?> cls = actions.get(viewId);
-            final ButtonIcon icon = get(viewId);
+            final ActivityTabIcon icon = get(viewId);
             icon.setView(cls);
         }
     }
@@ -27,14 +28,14 @@ public class DefaultTabbar implements Tabbar {
     @Override
     public void select(final int actionId) {
         for (Integer id : actions.keySet()) {
-            final ButtonIcon buttonIcon = get(id);
-            buttonIcon.setSelected(false);
+            final TabIcon tabIcon = get(id);
+            tabIcon.setSelected(false);
         }
-        final ButtonIcon selected = get(actionId);
+        final TabIcon selected = get(actionId);
         selected.setSelected(true);
     }
 
-    public ButtonIcon get(final int actionId) {
-        return (ButtonIcon)activity.findViewById(actionId);
+    public ActivityTabIcon get(final int actionId) {
+        return (ActivityTabIcon)activity.findViewById(actionId);
     }
 }

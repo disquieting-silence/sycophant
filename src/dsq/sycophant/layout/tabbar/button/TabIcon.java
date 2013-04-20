@@ -1,7 +1,7 @@
 package dsq.sycophant.layout.tabbar.button;
 
-public interface ButtonIcon {
-    void setView(final Class<?> cls);
+public interface TabIcon {
     void setEnabled(boolean enabled);
     void setSelected(boolean selected);
+    boolean isSelected();
 }
