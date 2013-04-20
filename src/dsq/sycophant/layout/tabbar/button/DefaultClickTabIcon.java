@@ -1,39 +1,25 @@
 package dsq.sycophant.layout.tabbar.button;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import dsq.sycophant.action.SimpleAction;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-public class DefaultViewTabIcon extends LinearLayout implements ViewTabIcon {
+public class DefaultClickTabIcon extends LinearLayout implements ClickTabIcon {
     private final ImageButton button;
     private final TabIcon delegate;
 
-    private final Map<String, List<Integer>> images = new HashMap<String, List<Integer>>();
-
-    public DefaultViewTabIcon(Context context, AttributeSet attrs) {
+    public DefaultClickTabIcon(Context context, AttributeSet attrs) {
         super(context, attrs);
         button = new ImageButton(context);
         this.delegate = new DefaultTabIcon(this, button, context, attrs);
         addView(button);
-    }
-
-    @Override
-    public void setView(final FrameLayout parent, final View child) {
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View view) {
-                if (!isSelected()) {
-                    parent.bringChildToFront(child);
-                }
-            }
-        });
     }
 
     @Override
@@ -49,5 +35,17 @@ public class DefaultViewTabIcon extends LinearLayout implements ViewTabIcon {
     @Override
     public boolean isSelected() {
         return delegate.isSelected();
+    }
+
+    @Override
+    public void setClick(final SimpleAction action) {
+        button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                if (!isSelected()) {
+                    action.run();
+                }
+            }
+        });
     }
 }

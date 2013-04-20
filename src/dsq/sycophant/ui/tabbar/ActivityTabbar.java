@@ -35,6 +35,11 @@ public class ActivityTabbar implements Tabbar {
         selected.setSelected(true);
     }
 
+    @Override
+    public void trigger(final int actionId) {
+        // Maybe implement later.
+    }
+
     public ActivityTabIcon get(final int actionId) {
         return (ActivityTabIcon)activity.findViewById(actionId);
     }

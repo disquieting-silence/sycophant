@@ -1,9 +1,12 @@
 package dsq.sycophant.ui.tabbar;
 
 import android.app.Activity;
+import android.util.Log;
+import android.view.View;
 import android.widget.FrameLayout;
+import dsq.sycophant.action.SimpleAction;
 import dsq.sycophant.layout.tabbar.button.TabIcon;
-import dsq.sycophant.layout.tabbar.button.ViewTabIcon;
+import dsq.sycophant.layout.tabbar.button.ClickTabIcon;
 import dsq.thedroid.ui.ComponentIndex;
 
 import java.util.HashMap;
@@ -24,9 +27,27 @@ public class ViewTabbar implements Tabbar {
     public void register() {
         for (Integer buttonId : tabs.keySet()) {
             final ComponentIndex index = tabs.get(buttonId);
-            final ViewTabIcon icon = get(buttonId);
-            icon.setView(parent, activity.findViewById(index.value));
+            final ClickTabIcon icon = get(buttonId);
+            final View view = activity.findViewById(index.value);
+            final SimpleAction action = viewAction(buttonId, view);
+            icon.setClick(action);
         }
+    }
+
+    private SimpleAction viewAction(final Integer index, final View view) {
+        return new SimpleAction() {
+            @Override
+            public void run() {
+                for (Integer buttonId : tabs.keySet()) {
+                    final ClickTabIcon button = get(buttonId);
+                    button.setSelected(false);
+                }
+
+                final ClickTabIcon clicked = get(index);
+                clicked.setSelected(true);
+                trigger(index);
+            }
+        };
     }
 
     @Override
@@ -37,16 +58,21 @@ public class ViewTabbar implements Tabbar {
         }
         final TabIcon selected = get(actionId);
         selected.setSelected(true);
-
-        trigger(actionId);
     }
 
-    private void trigger(final int actionId) {
+    @Override
+    public void trigger(final int actionId) {
         final ComponentIndex index = tabs.get(actionId);
-        parent.bringChildToFront(activity.findViewById(index.value));
+        for (int i = 0; i < parent.getChildCount(); i++) {
+            final View child = parent.getChildAt(i);
+            child.setVisibility(View.GONE);
+        }
+
+        final View view = activity.findViewById(index.value);
+        view.setVisibility(View.VISIBLE);
     }
 
-    public ViewTabIcon get(final int actionId) {
-        return (ViewTabIcon)activity.findViewById(actionId);
+    public ClickTabIcon get(final int actionId) {
+        return (ClickTabIcon)activity.findViewById(actionId);
     }
 }
