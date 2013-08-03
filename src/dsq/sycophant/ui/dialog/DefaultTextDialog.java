@@ -11,9 +11,9 @@ public class DefaultTextDialog implements TextDialog {
     @Override
     public AlertDialog dialog(final Activity activity, final String message, final String initial, final DialogListener listener) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setMessage(message);
         builder.setCancelable(true);
         final EditText text = new EditText(activity);
+        text.setHint(message);
         text.setText(initial);
         builder.setView(text);
         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
